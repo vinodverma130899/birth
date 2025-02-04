@@ -103,9 +103,30 @@
             font-size: 60px;
         }
 
+        .balloon-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .balloon {
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+            animation: rise 4s infinite ease-in-out;
+        }
+        @keyframes rise {
+            0% { top: 100%; opacity: 1; }
+            100% { top: -10%; opacity: 0; }
+        }
+       
+
     </style>
 </head>
 <body>
+    <div class="balloon-container"></div>
     <div class="title">🎉 Wish You Very Happy Birthday Suhana! 🎂</div>
     <div class="cake" >
         <img src="https://img1.picmix.com/output/stamp/normal/1/9/7/7/1987791_1aba7.gif" alt="Suhana's Photo" style="height: 200px; width: 250px; " > 
@@ -115,6 +136,8 @@
         </div>
     </div>
     <div class="wish">"Wishing you a day filled with love, laughter, and all the happiness you deserve. Happy Birthday, beautiful!"! 💖</div>
+   
+       
     <div class="gallery">
         <img src="suhana1.jpg" alt="Memory 1">
         <img src="suhana2.jpg" alt="Memory 2">
@@ -122,5 +145,12 @@
         <img src="suhana4.jpg" alt="Memory 4">
         <img src="suhana5.jpg" alt="Memory 5">
     </div>
+    <div class="balloon" style="left: 10%; background-color: rgb(34, 0, 253);"></div>
+    <div class="balloon" style="left: 30%; background-color: yellow;"></div>
+    <div class="balloon" style="left: 50%; background-color: rgb(255, 0, 0);"></div>
+    <div class="balloon" style="left: 70%; background-color: green;"></div>
+    <div class="balloon" style="left: 90%; background-color: rgb(253, 8, 232);"></div>
+</div>
+   
 </body>
 </html>
